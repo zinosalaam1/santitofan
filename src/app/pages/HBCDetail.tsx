@@ -63,8 +63,7 @@ export default function HBCDetail() {
             </p>
 
             <div className="flex items-baseline gap-3 mb-8">
-              <span className="text-5xl font-bold text-gray-900">₦32,000</span>
-              <span className="text-2xl text-gray-500">- ₦42,000</span>
+              <span className="text-5xl font-bold text-gray-900">₦70,000</span>
             </div>
 
             <div className="bg-green-50 border-2 border-green-500 rounded-2xl p-6 mb-8">

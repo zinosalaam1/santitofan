@@ -66,8 +66,8 @@ export default function SantitoDetail() {
             </p>
 
             <div className="flex items-baseline gap-3 mb-8">
-              <span className="text-5xl font-bold text-gray-900">₦50,000</span>
-              <span className="text-2xl text-gray-500">- ₦70,000</span>
+              <span className="text-5xl font-bold text-gray-900">₦95,400</span>
+              {/* <span className="text-2xl text-gray-500">- ₦70,000</span> */}
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-500 rounded-2xl p-6 mb-8">

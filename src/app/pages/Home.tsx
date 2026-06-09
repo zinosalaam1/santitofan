@@ -198,8 +198,7 @@ export default function Home() {
 
                 <div className="border-t pt-6">
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-bold text-gray-900">₦32,000</span>
-                    <span className="text-xl text-gray-500">- ₦42,000</span>
+                    <span className="text-4xl font-bold text-gray-900">₦70,000</span>
                   </div>
                   <div className="text-center text-green-600 font-semibold">
                     Click to view full details →
@@ -263,8 +262,8 @@ export default function Home() {
 
                 <div className="border-t pt-6">
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-bold text-gray-900">₦50,000</span>
-                    <span className="text-xl text-gray-500">- ₦70,000</span>
+                    <span className="text-4xl font-bold text-gray-900">₦95,400</span>
+                    {/* <span className="text-xl text-gray-500">- ₦70,000</span> */}
                   </div>
                   <div className="text-center text-green-600 font-semibold">
                     Click to view full details →
