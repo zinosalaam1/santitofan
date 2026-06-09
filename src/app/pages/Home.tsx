@@ -36,7 +36,7 @@ export default function Home() {
               >
                 <span className="flex items-center gap-2">
                   <Zap className="w-4 h-4" />
-                  Powered by LightPlus
+                  Powered by San Tito Ventures
                 </span>
               </motion.div>
               <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -287,7 +287,7 @@ export default function Home() {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Solar Fans?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Backed by LightPlus quality and reliability
+              Backed by San Tito Ventures quality and reliability
             </p>
           </motion.div>
 
@@ -491,7 +491,7 @@ export default function Home() {
               transition={{ delay: 0.3 }}
             >
               <div className="text-5xl font-bold text-white mb-3">100% Genuine</div>
-              <p className="text-green-100 text-lg">Certified Quality by LightPlus</p>
+              <p className="text-green-100 text-lg">Certified Quality by San Tito Ventures</p>
             </motion.div>
           </div>
         </div>

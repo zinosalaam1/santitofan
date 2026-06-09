@@ -55,10 +55,10 @@ export default function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center gap-4">
-              <img src={imgLogo} alt="LightPlus" className="h-12 w-auto" />
+              <img src={imgLogo} alt="San Tito Ventures" className="h-12 w-auto" />
               <div className="hidden md:block">
                 <h1 className="text-xl font-bold text-green-700">Solar Fans Nigeria</h1>
-                <p className="text-xs text-gray-600">By LightPlus - Your Trusted Solar Partner</p>
+                <p className="text-xs text-gray-600">By San Tito Ventures - Your Trusted Solar Partner</p>
               </div>
             </Link>
 
@@ -135,7 +135,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center md:text-left">
-              <img src={imgLogo} alt="LightPlus" className="h-16 w-auto mb-4 mx-auto md:mx-0" />
+              <img src={imgLogo} alt="San Tito Ventures" className="h-16 w-auto mb-4 mx-auto md:mx-0" />
               <p className="text-gray-400">Your trusted solar solutions partner</p>
             </div>
 
@@ -168,7 +168,7 @@ export default function Layout({ children }: LayoutProps) {
 
           <div className="border-t border-gray-700 pt-6 text-center">
             <p className="text-sm text-gray-500">
-              © 2026 LightPlus Solar Fans Nigeria. All rights reserved.
+              © 2026 San Tito Ventures Solar Fans Nigeria. All rights reserved.
             </p>
           </div>
         </div>
