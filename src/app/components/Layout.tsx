@@ -14,9 +14,10 @@ export default function Layout({ children }: LayoutProps) {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
 
-  const whatsappNumber = "+2348023220859";
+  const whatsappNumber = "09064595746";
+  const whatsappLinkNumber = "2349064595746";
   const whatsappMessage = "Hi! I'm interested in your solar fans.";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/${whatsappLinkNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   useEffect(() => {
     const handleScroll = () => {

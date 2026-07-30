@@ -1,14 +1,10 @@
-import { Phone, Check, Star, ArrowLeft, Wind, Zap, Shield, Sun, Gauge, Timer, Usb, Palette, Smartphone } from 'lucide-react';
+import { Check, Star, ArrowLeft, Wind, Zap, Shield, Sun, Gauge, Timer, Usb, Palette, Smartphone } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
 import imgSantito from '../../imports/WhatsApp_Image_2026-06-04_at_4.07.36_PM.jpeg';
 import Layout from '../components/Layout';
 
 export default function SantitoDetail() {
-  const whatsappNumber = "+2348023220859";
-  const whatsappMessage = "Hi! I'm interested in the SANTITO Premium Solar Fan.";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
   return (
     <Layout>
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-16">
@@ -23,6 +19,10 @@ export default function SantitoDetail() {
           </motion.button>
         </Link>
 
+        <div className="bg-gray-600 text-white text-center py-4 rounded-2xl font-bold text-lg mb-8">
+          This model is currently unavailable. Please check out our HBC Solar DC Fan, which is in stock now.
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           {/* Product Image */}
           <motion.div
@@ -31,13 +31,13 @@ export default function SantitoDetail() {
             transition={{ duration: 0.6 }}
           >
             <div className="sticky top-24">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-green-500">
-                <img src={imgSantito} alt="SANTITO Solar Fan" className="w-full" />
-                <div className="absolute top-6 left-6 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-bold shadow-lg text-lg">
-                  ⭐ PREMIUM
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-300">
+                <img src={imgSantito} alt="SANTITO Solar Fan" className="w-full grayscale" />
+                <div className="absolute top-6 left-6 bg-gray-600 text-white px-6 py-3 rounded-full font-bold shadow-lg text-lg">
+                  Unavailable
                 </div>
-                <div className="absolute top-6 right-6 bg-white text-green-600 px-6 py-3 rounded-full font-bold shadow-lg">
-                  Most Popular
+                <div className="absolute top-6 right-6 bg-white text-gray-600 px-6 py-3 rounded-full font-bold shadow-lg">
+                  Sold Out
                 </div>
               </div>
               <div className="flex gap-1 justify-center mt-6">
@@ -103,17 +103,18 @@ export default function SantitoDetail() {
               </ul>
             </div>
 
-            <motion.a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-center py-5 rounded-xl font-bold text-xl transition-all shadow-lg mb-4"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Phone className="inline w-6 h-6 mr-2" />
-              Order via WhatsApp
-            </motion.a>
+            <div className="block w-full bg-gray-300 text-gray-600 text-center py-5 rounded-xl font-bold text-xl mb-4 cursor-not-allowed">
+              Currently Unavailable
+            </div>
+            <Link to="/hbc-solar-fan">
+              <motion.div
+                className="block w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white text-center py-5 rounded-xl font-bold text-xl transition-all shadow-lg mb-4"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                View HBC Solar Fan (Available Now) →
+              </motion.div>
+            </Link>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-600 flex-wrap">
               <div className="flex items-center gap-1">
@@ -348,22 +349,20 @@ export default function SantitoDetail() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience Premium Cooling Today</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">SANTITO is Currently Unavailable</h2>
           <p className="text-xl mb-8 text-green-100">
-            Join 200+ happy customers enjoying cool, sustainable comfort with SANTITO!
+            Check out our HBC Solar DC Fan, in stock now with the same great reliability!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-colors shadow-2xl inline-flex items-center justify-center gap-3"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Phone className="w-6 h-6" />
-              Order Now via WhatsApp
-            </motion.a>
+            <Link to="/hbc-solar-fan">
+              <motion.button
+                className="bg-white text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-colors shadow-2xl inline-flex items-center justify-center gap-3"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View HBC Solar Fan
+              </motion.button>
+            </Link>
             <Link to="/">
               <motion.button
                 className="bg-green-800 text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-green-900 transition-colors inline-flex items-center justify-center gap-3"
@@ -375,9 +374,6 @@ export default function SantitoDetail() {
               </motion.button>
             </Link>
           </div>
-          <p className="text-sm text-green-200 mt-6">
-            ✓ 3-Month Premium Warranty • ✓ Free Lagos Delivery • ✓ 100% Genuine • ✓ USB Charging Port
-          </p>
         </motion.section>
       </div>
     </Layout>

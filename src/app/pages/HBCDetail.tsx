@@ -1,11 +1,11 @@
 import { Phone, Check, Star, ArrowLeft, Wind, Zap, Shield, Sun, Gauge, Timer, Weight, Palette } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-import imgSolarFans from '../../imports/WhatsApp_Image_2026-06-04_at_4.07.50_PM.jpeg';
+import imgSolarFans from '../../imports/hbc-fan-new.jpeg';
 import Layout from '../components/Layout';
 
 export default function HBCDetail() {
-  const whatsappNumber = "+2348023220859";
+  const whatsappNumber = "2349064595746";
   const whatsappMessage = "Hi! I'm interested in the HBC Solar DC Fan (Model XM01).";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 

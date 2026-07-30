@@ -2,12 +2,12 @@ import { Phone, Zap, Shield, Wind, Sun, Battery, Check, Star, Award } from 'luci
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
 import imgSantito from '../../imports/WhatsApp_Image_2026-06-04_at_4.07.36_PM.jpeg';
-import imgSolarFans from '../../imports/WhatsApp_Image_2026-06-04_at_4.07.50_PM.jpeg';
+import imgSolarFans from '../../imports/hbc-fan-new.jpeg';
 import { JumiaLogo, KongaLogo, JijiLogo, InstagramLogo } from '../components/BrandLogos';
 import Layout from '../components/Layout';
 
 export default function Home() {
-  const whatsappNumber = "+2348023220859";
+  const whatsappNumber = "2349064595746";
   const whatsappMessage = "Hi! I'm interested in your solar fans.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -208,70 +208,66 @@ export default function Home() {
             </motion.div>
           </Link>
 
-          {/* SANTITO Solar Fan */}
-          <Link to="/santito-solar-fan">
-            <motion.div
-              className="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-green-500 hover:shadow-3xl transition-all relative cursor-pointer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              whileHover={{ y: -8 }}
-            >
-              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-3 font-bold text-lg">
-                ⭐ PREMIUM CHOICE - Most Popular ⭐
+          {/* SANTITO Solar Fan - Currently Unavailable */}
+          <motion.div
+            className="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-gray-300 relative opacity-75"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 0.75, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="bg-gray-500 text-white text-center py-3 font-bold text-lg">
+              Currently Unavailable
+            </div>
+            <div className="relative">
+              <img src={imgSantito} alt="SANTITO Solar Fan" className="w-full h-80 object-cover grayscale" />
+              <div className="absolute top-4 right-4 bg-white text-gray-600 px-4 py-2 rounded-full font-bold shadow-lg">
+                Sold Out
               </div>
-              <div className="relative">
-                <img src={imgSantito} alt="SANTITO Solar Fan" className="w-full h-80 object-cover" />
-                <div className="absolute top-4 right-4 bg-white text-green-600 px-4 py-2 rounded-full font-bold shadow-lg">
-                  Premium
+            </div>
+            <div className="p-8">
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-2xl font-bold text-gray-900">SANTITO Solar Fan</h3>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
               </div>
-              <div className="p-8">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-bold text-gray-900">SANTITO Solar Fan</h3>
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-green-600 font-semibold mb-1">Premium Model</p>
-                <p className="text-gray-600 mb-6 italic">Cool, Smart, Beautiful — Even Off-Grid</p>
+              <p className="text-gray-500 font-semibold mb-1">Premium Model</p>
+              <p className="text-gray-600 mb-6 italic">Cool, Smart, Beautiful — Even Off-Grid</p>
 
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-3">
-                    <div className="bg-green-100 p-1 rounded-full">
-                      <Check className="w-4 h-4 text-green-600" />
-                    </div>
-                    <span className="text-sm">Premium modern design with digital controls</span>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3">
+                  <div className="bg-gray-100 p-1 rounded-full">
+                    <Check className="w-4 h-4 text-gray-500" />
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="bg-green-100 p-1 rounded-full">
-                      <Check className="w-4 h-4 text-green-600" />
-                    </div>
-                    <span className="text-sm">USB charging port to charge your phone!</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="bg-green-100 p-1 rounded-full">
-                      <Check className="w-4 h-4 text-green-600" />
-                    </div>
-                    <span className="text-sm">Available in White & Mint Green</span>
-                  </div>
+                  <span className="text-sm">Premium modern design with digital controls</span>
                 </div>
-
-                <div className="border-t pt-6">
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-bold text-gray-900">₦95,400</span>
-                    {/* <span className="text-xl text-gray-500">- ₦70,000</span> */}
+                <div className="flex items-start gap-3">
+                  <div className="bg-gray-100 p-1 rounded-full">
+                    <Check className="w-4 h-4 text-gray-500" />
                   </div>
-                  <div className="text-center text-green-600 font-semibold">
-                    Click to view full details →
+                  <span className="text-sm">USB charging port to charge your phone!</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="bg-gray-100 p-1 rounded-full">
+                    <Check className="w-4 h-4 text-gray-500" />
                   </div>
+                  <span className="text-sm">Available in White & Mint Green</span>
                 </div>
               </div>
-            </motion.div>
-          </Link>
+
+              <div className="border-t pt-6">
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-4xl font-bold text-gray-400 line-through">₦95,400</span>
+                </div>
+                <div className="text-center text-gray-500 font-semibold">
+                  Currently Unavailable
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -399,7 +395,7 @@ export default function Home() {
           </motion.a>
 
           <motion.a
-            href="https://jiji.ng"
+            href="https://jiji.ng/ikorodu/home-appliances/hbc-solar-fan-uoreMt6F8hpKsurxfpvPzZd.html?page=1&pos=1&cur_pos=1&ads_per_page=1&ads_count=1&lid=jPOuzJtnxDtgS8ci&indexPosition=0"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-105"
@@ -412,7 +408,7 @@ export default function Home() {
           </motion.a>
 
           <motion.a
-            href="https://instagram.com"
+            href="https://www.instagram.com/santitoventures?igsh=dndldmZwa24wdjJ3"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-105"
